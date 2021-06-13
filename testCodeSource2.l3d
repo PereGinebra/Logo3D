@@ -1,0 +1,32 @@
+//Aquest procediment pinta una figura 
+PROC figura(mida) IS
+    color(0.2, 0.2, 1)
+    quadrat(mida)
+    up(90)
+    color(0, 1, 1)
+    forward(mida)
+    down(90)
+    color(0, 1, 0.1)
+    quadrat(mida)
+    up(90)
+    hide()
+    forward(mida/4)
+    show()
+    forward(mida/4)
+    hide()
+    forward(mida/4)
+END
+
+//Aquest procediment pinta un quadrat de mida 
+PROC quadrat(mida) IS 
+    FOR i FROM 1 TO 4 DO
+        forward(mida)
+        left(90)
+    END
+END
+
+//El procediment main dibuixa la figura per defecte
+//Que te mida 5
+PROC main() IS 
+    figura(5)
+END
