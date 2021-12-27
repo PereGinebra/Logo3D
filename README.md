@@ -28,10 +28,10 @@ this language is programmed in python and ANTLR and is composed of various sourc
 To use Logo3D you must first download the previously mentioned files and install the libraries from [requirements.txt][requirements] using the command:
 > python -m pip install -r requirements.txt
 
-generating the parser and lexer files using:
+generate the parser and lexer files using:
 > antlr4 -Dlanguage=Python3 -no-listener logo3d.g
 
-and finally generating the visitor parent class file using:
+and finally generate the visitor parent class file using:
 > antlr4 -Dlanguage=Python3 -no-listener -visitor logo3d.g
 
 Now you can run your own Logo3D programs following the usage below!
